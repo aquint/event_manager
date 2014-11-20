@@ -1,0 +1,11 @@
+<div class="container all-teams">
+	<h1>All Events</h1>
+	<ul class="posts">
+	  <% @events.reverse_each do |event| %>
+	    <li>
+	      <p><%= l event.created_at, format: :short %></p>
+	      <%= link_to event.name, event %>
+	    </li>
+	  <% end %>
+	</ul>
+</div>
