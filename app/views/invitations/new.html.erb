@@ -7,7 +7,7 @@
 
       <%= f.hidden_field :event_id, :value => @event.id %>
       <%= f.label :attendee_id %>
-      <%= f.text_field :attendee_id %>
+      <%= f.collection_select(:attendee_id, User.all, :id, :email) %>
       <%= f.submit 'Send', class: "btn btn-primary" %>
 
     <% end %>
