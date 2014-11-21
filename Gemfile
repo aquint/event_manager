@@ -29,6 +29,15 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
 
+# Twitter Bootstrap for rails
+gem 'bootstrap-sass',       '3.2.0.0'
+
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
+gem 'momentjs-rails', :github => 'derekprior/momentjs-rails'
+
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

@@ -10,4 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap-datetimepicker
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
